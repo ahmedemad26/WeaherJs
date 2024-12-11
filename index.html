@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-4 fixed-top">
+        <div class="container">
+          <a class="navbar-brand d-flex " href="#"><img src="img/logo@2x.png" class="w-25">
+        <div class="mx-2">
+            <h1 class="fw-light fs-5">Weather</h1>
+        </div>
+        <br>
+        </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Live Camera</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Photo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <div class="item">
+      <div class="lear">
+        <div class="container">
+          <div class="find d-flex align-items-center justify-content-center text-center">
+            <input type="text" placeholder="Find your location..." id="search" class="w-75 rounded rounded-4">
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="text px-4 py-2 rounded rounded-4">
+                <div class="d-flex justify-content-around text-center align-items-center text-light">
+                  <p id="day"">Saturday</p>
+                  <p>
+                    <span id="date"></span>
+                    <span id="monthDay"></span>
+                  </p>
+                </div>
+                <p class="text-light" id="Cuntry">Cairo</p>
+                <h1 class="text-light" id="temp">23.1</h1>
+                <img src="img/116.webp" alt="" id="imageDay">
+                <p class="text-info" id="feel">Partly cloudy</p>
+                <span class="d-flex text-light ">
+                  <span >
+                    <img src="img/icon-umberella.png" alt="" srcset="">
+                    <span id="humidity">
+
+                    </span>
+                  </span>
+                  <span >
+                    <img src="img/icon-wind.png" alt="" srcset="">
+                    <span id="windSpeed">
+                        
+                    </span>
+                  </span>
+                  <span >
+                    <img src="img/icon-compass.png" alt="" srcset="">
+                    <span id="direction">
+                        
+                    </span>
+                  </span>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text px-4 py-2 rounded rounded-4 text-light text-center">
+                  <p id="tomorrowName">Sunday</p>
+                <img src="img/116.webp" id="tomorowImg">
+                <p class="fw-bold fs-2 py-1" id="towrrowDeg">42.8c</p>
+                <span class="" id="towrrowTemp">25.8C</span>
+                <p class="py-2 text-info" id="towrrowHala">Sunny</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="text px-4 py-2 rounded rounded-4 text-light text-center">
+                <p id="afterName">Sunday</p>
+                <img src="img/116.webp" id="afterImg">
+                <p class="fw-bold fs-2 py-1" id="afterDeg">42.8c</p>
+                <span class="" id="afterTemp">25.8C</span>
+                <p class="py-2 text-info" id="afterHala">Sunny</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/test.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

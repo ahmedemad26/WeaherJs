@@ -1,0 +1,70 @@
+
+:root{
+    --main--Color :#955cf6 ;
+    --main--Color-rgb:  149, 92, 246 ;
+    --secondary-color : #d0b5fd;
+    --secondary-color-rgb :  208, 181, 253;
+    --danger-color-rgb :  204,43, 58;
+    --border-bg-color: #2a1353 ;
+    --shadow: 0px 0px 2.5rem rgba(212 , 222 , 231 , 0.15); 
+    --heading-font:'Quicksand-B';
+    --body-font : 'Quicksand-R';
+}
+body{
+    background-color: #0a0a04;
+    color: var(--secondary-color);
+    font-family: var(--body-font);
+    padding-top: 90px;
+}
+.navbar-nav {
+    .nav-link{
+        &.active , & .show{
+            --bs-navbar-active-color : var(--main--Color);
+        }
+        &:hover{
+            --bs-nav-link-hover-color :var(--main--Color) ;
+        }
+    }
+}
+.text-main span{
+    box-shadow: 0 0 0 8px rgba(var(--main--Color-rgb),0.4);
+    width: 2rem;
+    height: 2rem;
+    transition: all 0.3s  ;
+}
+.text-main:hover span{
+    box-shadow: 0 0 0 0.75rem rgba(var(--main--Color-rgb),0.4);
+}
+.lear{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+}
+.item{
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+}
+.find input{
+    outline: none;
+    background: #1E202B;
+    color: #BFC1C8; 
+    height: 45px;
+    border: none;
+    padding: 10px;
+    margin-top: 35px;
+    margin-left: 50px;
+}
+.text{
+    background-color: #323544;
+    margin-top: 40px;
+}
+
+span{
+    list-style: none;
+    
+}
+span span{
+    padding: 0px 5px;
+}
